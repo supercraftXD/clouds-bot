@@ -1,37 +1,79 @@
-<div id="header">
-  <div class="logo-network"></div>
-  <div class="logo"></div>
-  <div class="logo-github"></div>
-</div>
-<div id="demo">
-  <div class="title">The last Discord bot you'll ever need.</div>
-  <div class="invite-now-wrapper">
-    <div class="invite-now">Invite Now</div>
-  </div>
-  <div class="discord-app-mount">
-    <div class="discord-app">
-      <div class="app-buttons"></div>
-      <div class="guilds">
-        <div class="guild selected" style="background-image: url(https://alca.tv/static/codepen/pens/zEXwQM/Para-GuildIcon.png);"></div>
-        <div class="guild"></div>
-        <div class="guild guild-add"></div>
-      </div>
-      <div class="channels">
-        <div class="header">Server Name</div>
-        <div class="channel-wrapper"></div>
-        <div class="user"></div>
-      </div>
-      <div class="chat">
-        <div class="header">general</div>
-        <div class="messages-wrapper">
-          <div class="messages"></div>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clouds Bot - لوحة التحكم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- القائمة الجانبية -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            ☁️ <span>Clouds Bot</span>
         </div>
-        <div class="input-wrapper">
-          <div class="input">
-            <textarea placeholder="Message #general" disabled="disabled"></textarea>
-          </div>
-        </div>
-      </div>
+        <ul class="nav-links">
+            <li class="active">لوحة التحكم</li>
+            <li>إدارة السيرفرات</li>
+            <li>الأوامر والأدوات</li>
+            <li>الإعدادات</li>
+        </ul>
     </div>
-  </div>
-</div>
+
+    <!-- محتوى الصفحة الرئيسي -->
+    <div class="main-content">
+        <!-- الشريط العلوي -->
+        <div class="topbar">
+            <div class="bot-status">
+                <div class="status-dot"></div>
+                <span>البوت متصل ويعمل بكفاءة</span>
+            </div>
+            <button class="loginbtn login-btn">تسجيل الدخول بـ Discord</button>
+        </div>
+
+        <!-- جسم لوحة التحكم -->
+        <div class="dashboard-body">
+            
+            <!-- ترحيب -->
+            <div class="welcome-banner">
+                <h1>أهلاً بك في لوحة تحكم Clouds Bot</h1>
+                <p>قم بإدارة سيرفراتك، تخصيص الأوامر، ومتابعة إحصائيات البوت بسهولة تامة.</p>
+            </div>
+
+            <!-- إحصائيات البوت -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>السيرفرات النشطة</h3>
+                    <div class="number">142</div>
+                </div>
+                <div class="stat-card">
+                    <h3>المستخدمين</h3>
+                    <div class="number">35,400</div>
+                </div>
+                <div class="stat-card">
+                    <h3>الأوامر المنفذة</h3>
+                    <div class="number">128,910</div>
+                </div>
+            </div>
+
+            <!-- قائمة السيرفرات -->
+            <div class="servers-section">
+                <h2>سيرفراتك المتاحة للإدارة</h2>
+                <div class="server-card">
+                    <div class="server-info">
+                        <div class="server-icon">CC</div>
+                        <div>
+                            <h3>Chill Corner Server</h3>
+                            <p style="color: var(--text-muted); font-size: 0.85rem;">الأعضاء: 1,250</p>
+                        </div>
+                    </div>
+                    <button class="manage-btn">إدارة البوت</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
